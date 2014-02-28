@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A39E89518C145C40024396D /* libzmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A39E89418C145C40024396D /* libzmq.a */; };
+		3A39E89718C145DA0024396D /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A39E89618C145DA0024396D /* libsodium.a */; };
 		E09410A718C0D699008D13FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410A618C0D699008D13FE /* Foundation.framework */; };
 		E09410A918C0D699008D13FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410A818C0D699008D13FE /* CoreGraphics.framework */; };
 		E09410AB18C0D699008D13FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410AA18C0D699008D13FE /* UIKit.framework */; };
@@ -22,7 +24,6 @@
 		E09410D018C0D69A008D13FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E09410CE18C0D69A008D13FE /* InfoPlist.strings */; };
 		E09410D218C0D69A008D13FE /* zmqBetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E09410D118C0D69A008D13FE /* zmqBetaTests.m */; };
 		E09410DE18C12E44008D13FE /* libzmq in Resources */ = {isa = PBXBuildFile; fileRef = E09410DD18C12E44008D13FE /* libzmq */; };
-		E09410E018C14167008D13FE /* libzmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410DF18C14167008D13FE /* libzmq.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A39E89418C145C40024396D /* libzmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzmq.a; sourceTree = "<group>"; };
+		3A39E89618C145DA0024396D /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsodium.a; sourceTree = "<group>"; };
 		E09410A318C0D699008D13FE /* zmqBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zmqBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09410A618C0D699008D13FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E09410A818C0D699008D13FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,7 +59,6 @@
 		E09410CF18C0D69A008D13FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E09410D118C0D69A008D13FE /* zmqBetaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zmqBetaTests.m; sourceTree = "<group>"; };
 		E09410DD18C12E44008D13FE /* libzmq */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libzmq; sourceTree = "<group>"; };
-		E09410DF18C14167008D13FE /* libzmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzmq.a; path = ../../resources/libzmq/lib/libzmq.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E09410E018C14167008D13FE /* libzmq.a in Frameworks */,
+				3A39E89718C145DA0024396D /* libsodium.a in Frameworks */,
 				E09410A918C0D699008D13FE /* CoreGraphics.framework in Frameworks */,
 				E09410AB18C0D699008D13FE /* UIKit.framework in Frameworks */,
 				E09410A718C0D699008D13FE /* Foundation.framework in Frameworks */,
+				3A39E89518C145C40024396D /* libzmq.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +109,8 @@
 		E09410A518C0D699008D13FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E09410DF18C14167008D13FE /* libzmq.a */,
+				3A39E89418C145C40024396D /* libzmq.a */,
+				3A39E89618C145DA0024396D /* libsodium.a */,
 				E09410DD18C12E44008D13FE /* libzmq */,
 				E09410A618C0D699008D13FE /* Foundation.framework */,
 				E09410A818C0D699008D13FE /* CoreGraphics.framework */,
@@ -402,6 +406,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jasonbecht/Development/appDev/resources/libzmq/lib,
+					/Users/drew/Dropbox/Code/zmqBeta,
 				);
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +434,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jasonbecht/Development/appDev/resources/libzmq/lib,
+					/Users/drew/Dropbox/Code/zmqBeta,
 				);
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,6 +503,7 @@
 				E09410D718C0D69A008D13FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E09410D818C0D69A008D13FE /* Build configuration list for PBXNativeTarget "zmqBetaTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +512,7 @@
 				E09410DA18C0D69A008D13FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
