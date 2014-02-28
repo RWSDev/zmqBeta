@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E09410A718C0D699008D13FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410A618C0D699008D13FE /* Foundation.framework */; };
+		E09410A918C0D699008D13FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410A818C0D699008D13FE /* CoreGraphics.framework */; };
+		E09410AB18C0D699008D13FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410AA18C0D699008D13FE /* UIKit.framework */; };
+		E09410B118C0D699008D13FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E09410AF18C0D699008D13FE /* InfoPlist.strings */; };
+		E09410B318C0D69A008D13FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E09410B218C0D69A008D13FE /* main.m */; };
+		E09410B718C0D69A008D13FE /* rwsdevAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E09410B618C0D69A008D13FE /* rwsdevAppDelegate.m */; };
+		E09410BA18C0D69A008D13FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E09410B818C0D69A008D13FE /* Main.storyboard */; };
+		E09410BD18C0D69A008D13FE /* rwsdevViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E09410BC18C0D69A008D13FE /* rwsdevViewController.m */; };
+		E09410BF18C0D69A008D13FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09410BE18C0D69A008D13FE /* Images.xcassets */; };
+		E09410C618C0D69A008D13FE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410C518C0D69A008D13FE /* XCTest.framework */; };
+		E09410C718C0D69A008D13FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410A618C0D699008D13FE /* Foundation.framework */; };
+		E09410C818C0D69A008D13FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410AA18C0D699008D13FE /* UIKit.framework */; };
+		E09410D018C0D69A008D13FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E09410CE18C0D69A008D13FE /* InfoPlist.strings */; };
+		E09410D218C0D69A008D13FE /* zmqBetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E09410D118C0D69A008D13FE /* zmqBetaTests.m */; };
+		E09410DE18C12E44008D13FE /* libzmq in Resources */ = {isa = PBXBuildFile; fileRef = E09410DD18C12E44008D13FE /* libzmq */; };
+		E09410E018C14167008D13FE /* libzmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E09410DF18C14167008D13FE /* libzmq.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E09410C918C0D69A008D13FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E094109B18C0D699008D13FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E09410A218C0D699008D13FE;
+			remoteInfo = zmqBeta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E09410A318C0D699008D13FE /* zmqBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zmqBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09410A618C0D699008D13FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E09410A818C0D699008D13FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E09410AA18C0D699008D13FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E09410AE18C0D699008D13FE /* zmqBeta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zmqBeta-Info.plist"; sourceTree = "<group>"; };
+		E09410B018C0D699008D13FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E09410B218C0D69A008D13FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E09410B418C0D69A008D13FE /* zmqBeta-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zmqBeta-Prefix.pch"; sourceTree = "<group>"; };
+		E09410B518C0D69A008D13FE /* rwsdevAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rwsdevAppDelegate.h; sourceTree = "<group>"; };
+		E09410B618C0D69A008D13FE /* rwsdevAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rwsdevAppDelegate.m; sourceTree = "<group>"; };
+		E09410B918C0D69A008D13FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E09410BB18C0D69A008D13FE /* rwsdevViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rwsdevViewController.h; sourceTree = "<group>"; };
+		E09410BC18C0D69A008D13FE /* rwsdevViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rwsdevViewController.m; sourceTree = "<group>"; };
+		E09410BE18C0D69A008D13FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E09410C418C0D69A008D13FE /* zmqBetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zmqBetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09410C518C0D69A008D13FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E09410CD18C0D69A008D13FE /* zmqBetaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zmqBetaTests-Info.plist"; sourceTree = "<group>"; };
+		E09410CF18C0D69A008D13FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E09410D118C0D69A008D13FE /* zmqBetaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zmqBetaTests.m; sourceTree = "<group>"; };
+		E09410DD18C12E44008D13FE /* libzmq */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libzmq; sourceTree = "<group>"; };
+		E09410DF18C14167008D13FE /* libzmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzmq.a; path = ../../resources/libzmq/lib/libzmq.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E09410A018C0D699008D13FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09410E018C14167008D13FE /* libzmq.a in Frameworks */,
+				E09410A918C0D699008D13FE /* CoreGraphics.framework in Frameworks */,
+				E09410AB18C0D699008D13FE /* UIKit.framework in Frameworks */,
+				E09410A718C0D699008D13FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09410C118C0D69A008D13FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09410C618C0D69A008D13FE /* XCTest.framework in Frameworks */,
+				E09410C818C0D69A008D13FE /* UIKit.framework in Frameworks */,
+				E09410C718C0D69A008D13FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E094109A18C0D699008D13FE = {
+			isa = PBXGroup;
+			children = (
+				E09410AC18C0D699008D13FE /* zmqBeta */,
+				E09410CB18C0D69A008D13FE /* zmqBetaTests */,
+				E09410A518C0D699008D13FE /* Frameworks */,
+				E09410A418C0D699008D13FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E09410A418C0D699008D13FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E09410A318C0D699008D13FE /* zmqBeta.app */,
+				E09410C418C0D69A008D13FE /* zmqBetaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E09410A518C0D699008D13FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E09410DF18C14167008D13FE /* libzmq.a */,
+				E09410DD18C12E44008D13FE /* libzmq */,
+				E09410A618C0D699008D13FE /* Foundation.framework */,
+				E09410A818C0D699008D13FE /* CoreGraphics.framework */,
+				E09410AA18C0D699008D13FE /* UIKit.framework */,
+				E09410C518C0D69A008D13FE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E09410AC18C0D699008D13FE /* zmqBeta */ = {
+			isa = PBXGroup;
+			children = (
+				E09410B518C0D69A008D13FE /* rwsdevAppDelegate.h */,
+				E09410B618C0D69A008D13FE /* rwsdevAppDelegate.m */,
+				E09410B818C0D69A008D13FE /* Main.storyboard */,
+				E09410BB18C0D69A008D13FE /* rwsdevViewController.h */,
+				E09410BC18C0D69A008D13FE /* rwsdevViewController.m */,
+				E09410BE18C0D69A008D13FE /* Images.xcassets */,
+				E09410AD18C0D699008D13FE /* Supporting Files */,
+			);
+			path = zmqBeta;
+			sourceTree = "<group>";
+		};
+		E09410AD18C0D699008D13FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E09410AE18C0D699008D13FE /* zmqBeta-Info.plist */,
+				E09410AF18C0D699008D13FE /* InfoPlist.strings */,
+				E09410B218C0D69A008D13FE /* main.m */,
+				E09410B418C0D69A008D13FE /* zmqBeta-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E09410CB18C0D69A008D13FE /* zmqBetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				E09410D118C0D69A008D13FE /* zmqBetaTests.m */,
+				E09410CC18C0D69A008D13FE /* Supporting Files */,
+			);
+			path = zmqBetaTests;
+			sourceTree = "<group>";
+		};
+		E09410CC18C0D69A008D13FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E09410CD18C0D69A008D13FE /* zmqBetaTests-Info.plist */,
+				E09410CE18C0D69A008D13FE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E09410A218C0D699008D13FE /* zmqBeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E09410D518C0D69A008D13FE /* Build configuration list for PBXNativeTarget "zmqBeta" */;
+			buildPhases = (
+				E094109F18C0D699008D13FE /* Sources */,
+				E09410A018C0D699008D13FE /* Frameworks */,
+				E09410A118C0D699008D13FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zmqBeta;
+			productName = zmqBeta;
+			productReference = E09410A318C0D699008D13FE /* zmqBeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E09410C318C0D69A008D13FE /* zmqBetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E09410D818C0D69A008D13FE /* Build configuration list for PBXNativeTarget "zmqBetaTests" */;
+			buildPhases = (
+				E09410C018C0D69A008D13FE /* Sources */,
+				E09410C118C0D69A008D13FE /* Frameworks */,
+				E09410C218C0D69A008D13FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E09410CA18C0D69A008D13FE /* PBXTargetDependency */,
+			);
+			name = zmqBetaTests;
+			productName = zmqBetaTests;
+			productReference = E09410C418C0D69A008D13FE /* zmqBetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E094109B18C0D699008D13FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = rwsdev;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "RazorWire Solutions, Inc.";
+				TargetAttributes = {
+					E09410C318C0D69A008D13FE = {
+						TestTargetID = E09410A218C0D699008D13FE;
+					};
+				};
+			};
+			buildConfigurationList = E094109E18C0D699008D13FE /* Build configuration list for PBXProject "zmqBeta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E094109A18C0D699008D13FE;
+			productRefGroup = E09410A418C0D699008D13FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E09410A218C0D699008D13FE /* zmqBeta */,
+				E09410C318C0D69A008D13FE /* zmqBetaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E09410A118C0D699008D13FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09410BF18C0D69A008D13FE /* Images.xcassets in Resources */,
+				E09410DE18C12E44008D13FE /* libzmq in Resources */,
+				E09410B118C0D699008D13FE /* InfoPlist.strings in Resources */,
+				E09410BA18C0D69A008D13FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09410C218C0D69A008D13FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09410D018C0D69A008D13FE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E094109F18C0D699008D13FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09410B318C0D69A008D13FE /* main.m in Sources */,
+				E09410BD18C0D69A008D13FE /* rwsdevViewController.m in Sources */,
+				E09410B718C0D69A008D13FE /* rwsdevAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09410C018C0D69A008D13FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09410D218C0D69A008D13FE /* zmqBetaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E09410CA18C0D69A008D13FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E09410A218C0D699008D13FE /* zmqBeta */;
+			targetProxy = E09410C918C0D69A008D13FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E09410AF18C0D699008D13FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E09410B018C0D699008D13FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E09410B818C0D69A008D13FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E09410B918C0D69A008D13FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E09410CE18C0D69A008D13FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E09410CF18C0D69A008D13FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E09410D318C0D69A008D13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E09410D418C0D69A008D13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E09410D618C0D69A008D13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/libzmq/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zmqBeta/zmqBeta-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/libzmq/**",
+				);
+				INFOPLIST_FILE = "zmqBeta/zmqBeta-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jasonbecht/Development/appDev/resources/libzmq/lib,
+				);
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E09410D718C0D69A008D13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/libzmq/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zmqBeta/zmqBeta-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/libzmq/**",
+				);
+				INFOPLIST_FILE = "zmqBeta/zmqBeta-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jasonbecht/Development/appDev/resources/libzmq/lib,
+				);
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E09410D918C0D69A008D13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/zmqBeta.app/zmqBeta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zmqBeta/zmqBeta-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "zmqBetaTests/zmqBetaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E09410DA18C0D69A008D13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/zmqBeta.app/zmqBeta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "zmqBeta/zmqBeta-Prefix.pch";
+				INFOPLIST_FILE = "zmqBetaTests/zmqBetaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E094109E18C0D699008D13FE /* Build configuration list for PBXProject "zmqBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E09410D318C0D69A008D13FE /* Debug */,
+				E09410D418C0D69A008D13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E09410D518C0D69A008D13FE /* Build configuration list for PBXNativeTarget "zmqBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E09410D618C0D69A008D13FE /* Debug */,
+				E09410D718C0D69A008D13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E09410D818C0D69A008D13FE /* Build configuration list for PBXNativeTarget "zmqBetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E09410D918C0D69A008D13FE /* Debug */,
+				E09410DA18C0D69A008D13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E094109B18C0D699008D13FE /* Project object */;
+}
